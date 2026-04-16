@@ -1,4 +1,4 @@
-# portfolio
+# Arthur Tilman - Cybersecurity Engineer - Portfolio
 
 My custom-made portfolio made with sharing in mind, so it's been templated for ease of cloning and deployment for others!
 
@@ -6,7 +6,7 @@ Overview: A terminal-themed developer portfolio built with Next.js and Tailwind 
 
 **One file to edit. Deploy in minutes. MIT License for anyone's use.**
 
-🔗 **[Portfolio](https://tilmana.me)**
+🔗 **[Portfolio](https://tilmana.dev)**
 
 ---
 
