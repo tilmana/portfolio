@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+
+  /* Theme palette — overridden at runtime via <html style="..."> from config.theme */
+  --color-primary: #39ff14;
+  --color-accent:  #00d9ff;
+  --color-dim:     #3a6a3a;
+  --color-edge:    #1a3a1a;
+  --color-surface: #0d2e0d;
+  --color-base:    #050a05;
+  --color-content: #d4d4d4;
+  --color-warn:    #ffd700;
+  --color-danger:  #ff4444;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-content);
+    font-family: var(--font-mono);
+  }
+
+  /* Ensure custom cursor hides the OS cursor on ALL child elements,
+     including buttons and links which otherwise override with cursor:pointer */
+  .cursor-none,
+  .cursor-none * {
+    cursor: none !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-primary) 30%, transparent);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-primary) 18%, transparent);
+    color: var(--color-primary);
+  }
+}
+
+@layer utilities {
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.04) 2px,
+      rgba(0, 0, 0, 0.04) 4px
+    );
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px var(--color-primary), 0 0 20px color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
+
+  .neon-glow {
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--color-primary) 35%, transparent),
+      0 0 20px color-mix(in srgb, var(--color-primary) 8%, transparent),
+      0 0 60px color-mix(in srgb, var(--color-primary) 4%, transparent);
+  }
+
+  .glow-pulse {
+    animation: pulse-neon 2s ease-in-out infinite;
+  }
+
+  .cursor-blink::after {
+    content: "▋";
+    animation: blink 1s step-end infinite;
+    color: var(--color-primary);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% { opacity: 1; }
+  50%  { opacity: 0; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes scanIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+@keyframes pulse-neon {
+  0%, 100% { box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-primary) 35%, transparent), 0 0 20px color-mix(in srgb, var(--color-primary) 8%, transparent); }
+  50%       { box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-primary) 55%, transparent), 0 0 30px color-mix(in srgb, var(--color-primary) 18%, transparent); }
+}
