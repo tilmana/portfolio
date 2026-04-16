@@ -4,7 +4,7 @@ A terminal-themed developer portfolio built with Next.js and Tailwind CSS. Desig
 
 **One file to edit. Deploy in minutes.**
 
-🔗 **[Live demo](https://your-demo-url.vercel.app)**
+🔗 **[Portfolio](https://tilmana.me)**
 
 ---
 
@@ -43,7 +43,7 @@ A terminal-themed developer portfolio built with Next.js and Tailwind CSS. Desig
 ## Getting started
 
 ```bash
-git clone https://github.com/yourusername/portfolio
+git clone https://github.com/tilmana/portfolio
 cd portfolio
 npm install
 npm run dev
