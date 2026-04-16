@@ -1,8 +1,10 @@
-# cli-portfolio
+# portfolio
 
-A terminal-themed developer portfolio built with Next.js and Tailwind CSS. Designed for security engineers, pentesters, and anyone who wants their portfolio to look inspired by the CLI.
+My custom-made portfolio made with sharing in mind, so it's been templated for ease of cloning and deployment for others!
 
-**One file to edit. Deploy in minutes.**
+Overview: A terminal-themed developer portfolio built with Next.js and Tailwind CSS. Designed for security engineers, pentesters, and anyone who wants their portfolio to look inspired by the CLI.
+
+**One file to edit. Deploy in minutes. MIT License for anyone's use.**
 
 🔗 **[Portfolio](https://tilmana.me)**
 
