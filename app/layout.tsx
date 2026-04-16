@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { config, THEMES } from "@/lib/config";
 
@@ -48,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={themeVars} className={`${jetbrainsMono.variable} h-full scroll-smooth`}>
-      <body className="min-h-full antialiased">{children}</body>
+      <body className="min-h-full antialiased">{children}<Analytics /><SpeedInsights /></body>
     </html>
   );
 }
