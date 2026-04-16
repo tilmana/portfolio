@@ -71,7 +71,7 @@ export const config = {
   handle: "tilmana",
 
   // EDIT: Job title shown in hero and meta tags
-  title: "Cybersecurity",
+  title: "Cybersecurity - Penetration Tester",
 
   // EDIT: Short tagline shown under your title in the hero
   tagline: "Professionally breaking things to improve their security",
@@ -107,7 +107,7 @@ export const config = {
   // ── META / SEO ───────────────────────────────────────────
   // EDIT: Your deployed URL — used for Open Graph tags (social share previews).
   // Update this after deploying so link previews show the correct URL.
-  siteUrl: "https://your-handle.vercel.app",
+  siteUrl: "https://tilmana.dev",
 
   // EDIT: Your domain — shown in the SSH session text (logout/reconnect animation)
   domain: "tilmana.dev",
