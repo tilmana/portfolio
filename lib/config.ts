@@ -268,18 +268,18 @@ export const config = {
   //        show a placeholder frame instead.
   projects: [
     {
-      name: "TBD",
+      name: "Wraith",
       description:
-        "TBD",
+        "A modular browser hook C2 framework inspired by BeEF — built for authorized security research and education.",
       longDescription:
-        "TBD",
-      tags: [],
-      url: "",
+        "Wraith is a full-stack browser hook framework with a Fastify C2 server, a ~4 KB IIFE agent bundle, and a React 18 admin dashboard. It features a pluggable module system with auto-discovery, real-time WebSocket session management, SQLite persistence, and polymorphic payload obfuscation. Official modules include mouse/click tracking with heatmap replay, keystroke capture with live keyboard visualization, device enumeration with permission prompting, WebRTC IP leak detection, browser fingerprinting, and idle/tab tracking. Modules are standalone repos that drop into the framework with zero code changes.",
+      tags: ["TypeScript", "React", "Fastify", "WebSocket", "SQLite", "esbuild"],
+      url: "https://github.com/tilmana/wraith",
       // EDIT: severity is optional — use for CVEs or bug bounty findings
       // Options: "critical" | "high" | "medium" | "low" | null
       severity: null,
       // EDIT: set to an image/video URL, or "" to show a placeholder
-      media: "",
+      media: "https://github.com/user-attachments/assets/a8dc21c6-b370-40bd-8e00-7c6d6a970d7a",
     },
     {
       name: "TBD ",
