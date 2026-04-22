@@ -204,7 +204,7 @@ export const config = {
     {
       title: "Red Team Consultant",
       company: "OnDefend (Independent Security Inspector/ISI for TikTok U.S.)",
-      period: "2025 – 2025",
+      period: "2024 – 2025",
       location: "Remote",
       type: "Full-time",
       confidential: false,
